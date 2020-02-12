@@ -1,0 +1,8 @@
+# excluir archivo de MAC
+.DS_Store
+
+# excluir assets
+assets/*
+
+# excluir el contenido del folder pero no el folder
+!assets/.gitkeep
