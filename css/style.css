@@ -104,7 +104,7 @@ html {
     --font-size: 1rem;
     --body-font-size: 1rem;
     --font-style: normal;
-    --font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family: "quebecregular"
     /* Components - Heading */
     --heading-font-color: #404040;
     --heading-font-weight: bold;
