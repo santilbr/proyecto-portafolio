@@ -1,3 +1,4 @@
+/* FONT: QUEBEC */
 @font-face {
     font-family: "quebecregular";
     src: url("assets/fonts/quebec-regular-webfont.woff2") format("woff2");
@@ -131,4 +132,34 @@ html {
   
   /* Layouts */
   
-  /* Ejercicio layout */
+  /* Custom */
+  body {
+    height: 100vh;
+    background-color: rgba(177,135,135,0.3);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.navegacion > * {
+    flex: auto;
+}
+
+.navegacion header {
+    border: 1px solid black; 
+}
+
+.navegacion footer {
+   border: 1px solid black; 
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
