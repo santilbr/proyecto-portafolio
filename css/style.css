@@ -155,6 +155,18 @@ ul {
   }
 }
 
+/* Proyectos */
+.site-container.proyecto {
+}
+
+.site-container.proyecto {
+  background: none;
+}
+
+.proyecto {
+  position: relative;
+}
+
 /****************************************
 *    Helpers
 *****************************************/
