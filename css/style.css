@@ -91,14 +91,17 @@ ul {
   padding-top: 1em;
 }
 
-.site-name {
+.header h1,
+.header p {
   font-size: 2.5em;
+}
+
+.site-name {
   font-weight: normal;
   text-transform: lowercase;
 }
 
 .header a {
-  font-size: 2.5em;
   font-weight: bold;
   margin-top: 0;
 }
@@ -109,13 +112,13 @@ ul {
 /*menu*/
 .menu  {
   font-family: var(--font-family-semibold);
+  /*  display: block; */
 }
 .menu a:hover {
   font-family: var(--font-family-semibolditalic);
 }
 /*portafolio menu*/
 #portafolio-menu {
-  font-size: 2.5em;
   margin-top: 0;
 }
 
@@ -137,19 +140,20 @@ ul {
 
 @media screen and (min-width: 40em) {
   .site-container {
+    display: grid;
+    grid-template-rows: max-content 1fr;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2322424/santi.png)
       no-repeat right;
     background-size: 500px;
   }
 
   .menu {
-    display: block;
-    padding-top: 0.5em;
+    margin-top: -2em;
+    align-self: center;
+    height: 100%;
     line-height: 1.4;
   }
 
-  .header a,
-  .site-name,
   .footer a {
     font-size: 2em;
   }
@@ -157,6 +161,15 @@ ul {
 
 /* Proyectos */
 .site-container.proyecto {
+}
+
+.site-container.proyecto .menu ul {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.site-container.proyecto nav li:not(:first-child) {
+  display: none;
 }
 
 .site-container.proyecto {
