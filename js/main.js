@@ -1,8 +1,15 @@
-const menu = document.getElementById("portafolio-menu");
-const menuItems = document.querySelector(".menu");
+const nav = document.querySelector("nav");
 
-menu.addEventListener("click", displayMenu);
+function Menu(nav) {
+  const menu = nav.querySelector(".menu-list");
+  const link = nav.querySelector(".link");
 
-function displayMenu() {
-  menuItems.toggleAttribute("hidden");
+  link.addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    menu.toggleAttribute("hidden");
+    link.classList.toggle("italica");
+  }
 }
+
+Menu(nav);
